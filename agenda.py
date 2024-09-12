@@ -1,6 +1,19 @@
 
 lista = []
 
+def CriarContato():
+    # fazer verificação se o contato já existe
+    nome = input('Nome: ')
+    telefone = input('Telefone: ')
+    email = input('email:')
+
+    contato = {
+    "nome" : nome, "telefone" : telefone, "email" : email
+    }
+
+    lista.append(contato)
+    print(f"Contato {nome} adicionado com sucesso!")
+
 def menu ():
     print('''
 ==============Agenda de Contatos==============
